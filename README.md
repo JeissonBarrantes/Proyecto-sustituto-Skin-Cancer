@@ -7,8 +7,9 @@
 
 - **Jeisson Alexis Barrantes Toro**
   - *Cédula:* 1020484148
- 
-## PASOS PARA EJECUTAR
+
+## FASE - 1
+### PASOS PARA EJECUTAR
 
 1. Las primeras celdas son de configuración e importación de librerías, en la celda con carga de archivo de google debes subir el archivo de Kaggle.json que obtienes como Key en la página oficial de Kaggle. Luego continua ejecutando las celdas hasta el apartado de Preprocessing.
 
