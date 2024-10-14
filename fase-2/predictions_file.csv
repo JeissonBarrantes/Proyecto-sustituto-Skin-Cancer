@@ -1,0 +1,10 @@
+image_path,predicted_class
+./imagenes_predict\ISIC_0052367.jpg,0
+./imagenes_predict\ISIC_0061318.jpg,0
+./imagenes_predict\ISIC_0062556.jpg,0
+./imagenes_predict\ISIC_0065755.jpg,0
+./imagenes_predict\ISIC_0067881.jpg,0
+./imagenes_predict\ISIC_0068212.jpg,0
+./imagenes_predict\ISIC_0070972.jpg,0
+./imagenes_predict\ISIC_0071851.jpg,0
+./imagenes_predict\ISIC_0071852.jpg,0
