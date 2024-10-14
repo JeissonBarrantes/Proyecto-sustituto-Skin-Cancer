@@ -25,10 +25,10 @@
 2. Una vez creada la imagen de docker, debes ejecutar el comando *docker run -it skin_cancer_img* y entrarás en el entorno de ejecución de docker. Una vez aqui ya puedes ejecutar los scripts predict.py para realizar alguna predicción y train.py para realizar un entrenamiento.
    
 4. Para ejecutar el predict.py y realizar una predicción debes seguir la proxima linea de comando:  
-  python predict.py  --img_input "./data/input_img"  --model_file "./model/skin_cancer_model.h5" --predictions_file "./predictions_file.csv"
+``  python predict.py  --img_input "./data/input_img"  --model_file "./model/skin_cancer_model.h5" --predictions_file "./predictions_file.csv" ``
 
 5. (Opcional) Para ejecutar el train.py en caso de que quieras reentrenar el modelo o hacerle overtraning deberas ejecutar la siguiente linea de comando:
-   python train.py --metadata_file "./data/train-metadata.csv" --img_file "./data/training" --model_file "./model/skin_cancer_model.h5" --overwrite_model (opcional)
+   ``python train.py --metadata_file "./data/train-metadata.csv" --img_file "./data/training" --model_file "./model/skin_cancer_model.h5" --overwrite_model (opcional)``
 
    
 Recuerda que cada argumento esta direccionado a un path, podrás modificarlo pero debes tener en cuenta que la imagen lo tiene pensado de esa forma.
