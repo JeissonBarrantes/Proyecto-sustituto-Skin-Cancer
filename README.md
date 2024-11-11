@@ -20,7 +20,7 @@
 ## FASE - 2
 ### PASOS PARA EJECUTAR
 
-1. Debes crear la imagen de docker, para eso debes estar desde una terminal en la carpeta raiz del proyecto (directorio fase - 2) y ejecutar el comando *docker build -t skin_cancer_img .* y esperar a que se cree la imagen de docker. Recuerda que todos los pasos que seguira docker para crear la imagen están en el dockerfile. Esta imagen se creo apartir de una instanciada con tensorflow, permitiendo el uso de la mayoría de sus librerías necesarias para el proyecto.
+1. Debes crear la imagen de docker, para eso debes estar desde una terminal en la carpeta raiz del proyecto (directorio fase - 2), además recuerda que debes tener el modelo en predisposición para que sea leido por los scripts en este caso se espera tener un directorio model donde ira el modelo y ejecutar el comando *docker build -t skin_cancer_img .* y esperar a que se cree la imagen de docker. Recuerda que todos los pasos que seguira docker para crear la imagen están en el dockerfile. Esta imagen se creo apartir de una instanciada con tensorflow, permitiendo el uso de la mayoría de sus librerías necesarias para el proyecto.
    
 2. Una vez creada la imagen de docker, debes ejecutar el comando *docker run -it skin_cancer_img* y entrarás en el entorno de ejecución de docker. Una vez aqui ya puedes ejecutar los scripts predict.py para realizar alguna predicción y train.py para realizar un entrenamiento.
    
@@ -32,3 +32,13 @@
 
    
 Recuerda que cada argumento esta direccionado a un path, podrás modificarlo pero debes tener en cuenta que la imagen lo tiene pensado de esa forma.
+
+## FASE - 3
+### PASOS PARA EJECUTAR
+
+
+1. Debes crear la imagen de docker, para eso debes estar desde una terminal en la carpeta raiz del proyecto (directorio fase - 3), recuerda tener el modelo en carpeta model o donde prefieras teniendo en cuenta que debes ajustar el path y ejecutar el comando *docker build -t skin_cancer_img .* y esperar a que se cree la imagen de docker. Esta API fue creada con FastAPI y en el ``Dockerfile`` se encuentra el proceso de instalación de los requeriments y la exposicion del puerto ``8000``: CMD ["uvicorn", "apirest:app", "--host", "0.0.0.0", "--port", "8000"]
+
+2.Luego de crear el API en Docker, debes ejecutar ``python apirest.py`` para ejecutar el API y instanciar todo lo necesario para usar el endpoint de predict (Dentro de esta API se encuentra el preprocesado de que se le hará a todas las imágenes para ser usadas con el modelo) 
+   
+3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes.
