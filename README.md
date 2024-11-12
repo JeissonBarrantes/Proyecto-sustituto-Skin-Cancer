@@ -36,6 +36,12 @@ Recuerda que cada argumento esta direccionado a un path, podrás modificarlo per
 ## FASE - 3
 ### PASOS PARA EJECUTAR
 
+### MUY IMPORTANTE:
+Antes de realizar el proceso de creación del docker, debes descargar desde este enlace https://drive.google.com/file/d/1TQ6NDLRcW_l6Xfw49uhbchUdvAvou3VN/view?usp=sharing el ``train-metadata.csv`` ya que este no puede ser cargado al github se descarga aparte y debes alojarlo en la carpeta donde vayas a utilizar las imagenes que en este caso es training.
+
+Imagen de referencia:
+![image](https://github.com/user-attachments/assets/049737f2-4f8d-4221-bf3c-bf590f7e6271)
+
 
 1. Debes crear la imagen de docker, para eso debes estar desde una terminal en la carpeta raiz del proyecto (directorio fase - 3), recuerda tener el modelo en carpeta model o donde prefieras teniendo en cuenta que debes ajustar el path y ejecutar el comando ``*docker build -t api .``  y esperar a que se cree la imagen de docker. Esta API fue creada con FastAPI y en el ``Dockerfile`` se encuentra el proceso de instalación de los requeriments y la exposicion del puerto ``8000``: CMD ["uvicorn", "apirest:app", "--host", "0.0.0.0", "--port", "8000"]
 
