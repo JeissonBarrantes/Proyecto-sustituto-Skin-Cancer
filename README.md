@@ -45,7 +45,8 @@ Una vez ejecutado deberías obtener lo siguiente:
 ![image](https://github.com/user-attachments/assets/c654af48-f340-4cb9-94c0-3d2fd533cf6f)
 
 
-3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes dentro de este está en endpoint de ``Predict`` y el de ``Train``. Para hacer el training y el predict ``client.py`` dispone de una ruta cada uno, en la del training debe apuntar a un zip donde esten las imagenes para realizar el entrenamiento, en el caso del ejemplo solo son 2 y permitirá 
-
-   ![image](https://github.com/user-attachments/assets/3167fd43-04f8-473a-80fc-ea9ecff8e8c5)
+3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes dentro de este está en endpoint de ``Predict`` y el de ``Train``. Para hacer el training y el predict ``client.py`` dispone de una ruta cada uno, en la del training debe apuntar a un zip donde esten las imagenes para realizar el entrenamiento, en el caso del ejemplo solo son 2 y permitirá hacer un sobreentreno.
+  
+Tendrás algo similar cuando ejecutes el ``client.py`` mostrando que la API funciona y devuelve las predicciones 
+![image](https://github.com/user-attachments/assets/3f0a2d6b-b522-4254-8d17-f5dfbb50f710)
 
