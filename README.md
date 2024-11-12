@@ -41,4 +41,4 @@ Recuerda que cada argumento esta direccionado a un path, podrás modificarlo per
 
 2.Luego de crear el API en Docker, debes ejecutar ``python apirest.py`` para ejecutar el API y instanciar todo lo necesario para usar el endpoint de predict (Dentro de esta API se encuentra el preprocesado de que se le hará a todas las imágenes para ser usadas con el modelo) 
    
-3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes.
+3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes dentro de este está en endpoint de ``Predict`` y el de ``Train``.
