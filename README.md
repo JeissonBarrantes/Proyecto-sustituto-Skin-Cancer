@@ -42,11 +42,24 @@ Recuerda que cada argumento esta direccionado a un path, podrás modificarlo per
 2.Luego de crear el API en Docker, debes ejecutar la imagen de docker con el comando `` docker run -it -p 8000:8000 api`` y luego en la consola ejecutar ``python apirest.py`` para ejecutar el API y instanciar todo lo necesario para usar el endpoint de predict (Dentro de esta API se encuentra el preprocesado de que se le hará a todas las imágenes para ser usadas con el modelo) 
 
 Una vez ejecutado deberías obtener lo siguiente:
+
 ![image](https://github.com/user-attachments/assets/c654af48-f340-4cb9-94c0-3d2fd533cf6f)
 
 
-3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes dentro de este está en endpoint de ``Predict`` y el de ``Train``. Para hacer el training y el predict ``client.py`` dispone de una ruta cada uno, en la del training debe apuntar a un zip donde esten las imagenes para realizar el entrenamiento, en el caso del ejemplo solo son 2 y permitirá hacer un sobreentreno.
-  
+3. Para utilizar el endpoint de predict debes ejecutar en otra terminal ``python client.py`` dentro de este script esta el path de la imagen que puedes modificar si quieres probar otras imágenes dentro de este está en endpoint de ``Predict`` y el de ``Train``. Para hacer el training y el predict ``client.py`` dispone de una ruta cada uno, en la del training debe apuntar a un ``.zip`` donde esten las imagenes para realizar el entrenamiento, en el caso del ejemplo solo son 2 y permitirá hacer un sobreentreno.
+
 Tendrás algo similar cuando ejecutes el ``client.py`` mostrando que la API funciona y devuelve las predicciones 
 ![image](https://github.com/user-attachments/assets/3f0a2d6b-b522-4254-8d17-f5dfbb50f710)
+
+
+Imagen de referencia donde debe ir la data para realizar el input y el training para ejecutar con el ``client.py`` (puedes alojar las imagenes donde desees, pero el training, al ser tantas imágenes se espera recibir un ``.zip``):
+
+![image](https://github.com/user-attachments/assets/3694de4b-4f92-4748-94b3-57510a24a18b)
+
+Por ultimo el model donde debes alojar el modelo (como es tan pesado no se carga en el github pero en la primera fase puedes obtener este modelo):
+
+![image](https://github.com/user-attachments/assets/10bd484d-4871-4573-b340-64ca8c7d4b89)
+
+
+
 
