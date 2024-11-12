@@ -40,6 +40,7 @@ Recuerda que cada argumento esta direccionado a un path, podrás modificarlo per
 Antes de realizar el proceso de creación del docker, debes descargar desde este enlace https://drive.google.com/file/d/1TQ6NDLRcW_l6Xfw49uhbchUdvAvou3VN/view?usp=sharing el ``train-metadata.csv`` ya que este no puede ser cargado al github se descarga aparte y debes alojarlo en la carpeta donde vayas a utilizar las imagenes que en este caso es training.
 
 Imagen de referencia:
+
 ![image](https://github.com/user-attachments/assets/049737f2-4f8d-4221-bf3c-bf590f7e6271)
 
 
